@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/mm"
+    android:background="@color/white"
+    android:padding="@dimen/sixteen_dips"
+    tools:context="com.example.android.goalindex2.SecondActivity">
+
+    <LinearLayout style="@style/mmv">
+
+        <ImageView
+            android:contentDescription="@string/second_activity_image"
+            android:src="@drawable/goalkeeper"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"/>
+
+        <LinearLayout
+            android:layout_margin="@dimen/two_dips" style="@style/mwh">
+
+            <EditText
+                style="@style/team_edittext"
+                android:layout_marginEnd="@dimen/two_dips"
+                android:layout_marginRight="@dimen/two_dips"
+                android:id="@+id/first_team_edittext"
+                android:hint="@string/first_team_hint"/>
+
+            <EditText
+                android:layout_marginStart="@dimen/two_dips"
+                style="@style/team_edittext"
+                android:layout_marginLeft="@dimen/two_dips"
+                android:id="@+id/second_team_edittext"
+                android:hint="@string/second_team_hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="@dimen/two_dips" style="@style/mwh">
+
+            <EditText
+                android:layout_marginEnd="@dimen/two_dips"
+                android:inputType="textShortMessage"
+                android:layout_marginRight="@dimen/two_dips"
+                android:id="@+id/venue_game_edittext"
+                style="@style/venue_duration_date_time"
+                android:hint="@string/venue_hint" />
+
+            <EditText
+                android:layout_marginStart="@dimen/two_dips"
+                android:inputType="number"
+                android:layout_marginLeft="@dimen/two_dips"
+                android:id="@+id/duration_game_edittext"
+                style="@style/venue_duration_date_time"
+                android:hint="@string/duration_hint" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_margin="@dimen/two_dips" style="@style/mwh">
+
+            <TextView
+                android:layout_marginEnd="@dimen/two_dips"
+                android:layout_marginRight="@dimen/two_dips"
+                android:id="@+id/date_game_textview"
+                style="@style/venue_duration_date_time"
+                android:onClick="showDatePickerDialog"
+                android:text="@string/set_date" />
+
+            <TextView
+                android:layout_marginStart="@dimen/two_dips"
+                android:layout_marginLeft="@dimen/two_dips"
+                android:id="@+id/time_game_textview"
+                style="@style/venue_duration_date_time"
+                android:onClick="showTimePickerDialog"
+                android:text="@string/set_time" />
+        </LinearLayout>
+
+        <Button
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_red_background"
+            android:textSize="@dimen/sixteen_sp"
+            android:layout_margin="@dimen/two_dips"
+            android:fontFamily="@font/baloo_bhai"
+            style="@style/ww"
+            android:layout_gravity="center"
+            android:onClick="toThirdActivity"
+            android:text="@string/enter" />
+    </LinearLayout>
+
+</ScrollView>

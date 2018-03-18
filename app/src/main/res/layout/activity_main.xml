@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/mmv"
+    android:padding="@dimen/sixteen_dips"
+    android:background="@color/white"
+    tools:context="com.example.android.goalindex2.MainActivity">
+
+    <LinearLayout style="@style/mwv">
+
+        <TextView
+            style="@style/ww"
+            android:textSize="@dimen/eighty_sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/bangers"
+            android:text="@string/welcome_message"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary" />
+
+        <LinearLayout style="@style/mwh">
+            <ImageView
+                android:contentDescription="@string/ball_left"
+                android:src="@drawable/soc"
+                style="@style/first_activity_image"/>
+            <ImageView
+                android:contentDescription="@string/ball_middle"
+                android:src="@drawable/middle"
+                style="@style/first_activity_image"/>
+            <ImageView
+                android:contentDescription="@string/boy_right"
+                android:src="@drawable/soccc"
+                style="@style/first_activity_image"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/ww"
+            android:layout_gravity="center"
+            android:fontFamily="@font/baloo_bhai"
+            android:padding="@dimen/eight_dips"
+            android:text="@string/comp"
+            android:textColor="@color/comp_color"
+            android:textSize="@dimen/fifteen_sp" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/mm"
+    android:background="@color/white"
+    android:padding="@dimen/sixteen_dips"
+    tools:context="com.example.android.goalindex2.ThirdActivity">
+
+    <LinearLayout style="@style/mmv">
+
+        <LinearLayout style="@style/mwh">
+
+            <TextView
+                android:id="@+id/first_team_textview"
+                style="@style/third_activity_team_textView"/>
+
+            <ImageView
+                android:contentDescription="@string/balltop"
+                android:layout_width="@dimen/zero_dips"
+                android:layout_height="@dimen/sixty_dips"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/thirdball" />
+
+            <TextView
+                android:id="@+id/second_team_textview"
+                style="@style/third_activity_team_textView"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/mwh"
+            android:layout_marginTop="@dimen/eight_dips">
+
+            <TextView
+                android:id="@+id/first_team_score_textview"
+                style="@style/goal_board"
+                android:onClick="goalForFirstTeam" />
+
+            <TextView
+                android:id="@+id/second_team_score_textview"
+                style="@style/goal_board"
+                android:onClick="goalForSecondTeam" />
+        </LinearLayout>
+
+        <RelativeLayout
+            style="@style/mw"
+            android:layout_marginTop="@dimen/eight_dips">
+
+            <TextView
+                android:id="@+id/timer"
+                style="@style/mw"
+                android:gravity="center"
+                android:textSize="@dimen/thirty_sp" />
+
+            <TextView
+                android:id="@+id/start_timer_textview"
+                style="@style/mw"
+                android:layout_below="@+id/timer"
+                android:background="@drawable/timer_grey_outline"
+                android:gravity="center"
+                android:text="@string/start_timer"
+                android:textSize="@dimen/eighteen_sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/stopPauseResume_linearLayout"
+                style="@style/mwh"
+                android:layout_below="@id/timer"
+                android:background="@drawable/timer_grey_outline"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/stop_timer_textview"
+                    style="@style/evenly_spacing_horizontally"
+                    android:gravity="center"
+                    android:text="@string/stop"
+                    android:textSize="@dimen/eighteen_sp" />
+
+                <View
+                    android:layout_width="@dimen/two_dips"
+                    android:layout_height="match_parent"
+                    android:background="#E0E0E0" />
+
+                <TextView
+                    android:id="@+id/pause_resume_timer_textview"
+                    style="@style/evenly_spacing_horizontally"
+                    android:gravity="center"
+                    android:text="@string/pause"
+                    android:textSize="@dimen/eighteen_sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout android:layout_marginTop="@dimen/sixteen_dips"
+            android:padding="@dimen/eight_dips"
+            style="@style/mwv"
+            android:background="@drawable/venue_date_time">
+
+            <TextView
+                android:fontFamily="@font/baloo_bhai"
+                android:gravity="center"
+                android:id="@+id/venue_game_textview"
+                style="@style/mw"
+                android:textSize="@dimen/sixteen_sp" />
+            <LinearLayout style="@style/mwh">
+
+                <TextView
+                    android:fontFamily="@font/baloo_bhai"
+                    android:gravity="center"
+                    android:id="@+id/dateOfGame_textview"
+                    style="@style/evenly_spacing_horizontally"
+                    android:textSize="@dimen/sixteen_sp" />
+
+                <TextView
+                    android:fontFamily="@font/baloo_bhai"
+                    android:gravity="center"
+                    android:id="@+id/timeOfGame_textview"
+                    style="@style/evenly_spacing_horizontally"
+                    android:textSize="@dimen/sixteen_sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/mwh"
+            android:layout_marginTop="@dimen/sixteen_dips"
+            android:background="@drawable/card_rounded_grey">
+
+            <ImageView
+                android:contentDescription="@string/red_card"
+                style="@style/card_image"
+                android:onClick="redForFirstTeam"
+                android:src="@drawable/redcard" />
+
+            <TextView
+                android:id="@+id/first_team_red_card_text_view"
+                style="@style/card_track" />
+
+            <View
+                android:layout_width="@dimen/four_dips"
+                android:layout_height="@dimen/fifty_dips"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/second_team_red_card_text_view"
+                style="@style/card_track" />
+
+            <ImageView
+                android:contentDescription="@string/red_card"
+                style="@style/card_image"
+                android:onClick="redForSecondTeam"
+                android:src="@drawable/redcard" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/mwh"
+            android:layout_marginTop="@dimen/four_dips"
+            android:background="@drawable/card_rounded_grey">
+
+            <ImageView
+                android:contentDescription="@string/yellow_card"
+                style="@style/card_image"
+                android:onClick="yellowForFirstTeam"
+                android:src="@drawable/yellowcard" />
+
+            <TextView
+                android:id="@+id/first_team_yellow_card_text_view"
+                style="@style/card_track" />
+
+            <View
+                android:layout_width="@dimen/four_dips"
+                android:layout_height="@dimen/fifty_dips"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/second_team_yellow_card_text_view"
+                style="@style/card_track" />
+
+            <ImageView
+                android:contentDescription="@string/yellow_card"
+                style="@style/card_image"
+                android:onClick="yellowForSecondTeam"
+                android:src="@drawable/yellowcard" />
+        </LinearLayout>
+
+        <TextView
+            android:onClick="shareString"
+            android:layout_marginTop="@dimen/eight_dips"
+            android:fontFamily="@font/baloo_bhai"
+            android:gravity="center"
+            android:text="@string/share"
+            android:background="@drawable/venue_date_time"
+            android:padding="@dimen/eight_dips"
+            style="@style/mw" />
+
+    </LinearLayout>
+
+</ScrollView>

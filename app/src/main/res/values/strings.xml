@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Goal Index 2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="date_picker">datePicker</string>
+    <string name="time_picker">timePicker</string>
+    <string name="comp">\"Your best companion for a football match\"</string>
+    <string name="welcome_message">goal index</string>
+    <string name="press_ball">Press the ball to start the match</string>
+    <string name="boy_right">boyRight</string>
+    <string name="ball_middle">ballMiddle</string>
+    <string name="ball_left">boyLeft</string>
+    <string name="first_team_hint">First Team</string>
+    <string name="second_team_hint">Second Team</string>
+    <string name="venue_hint">Venue</string>
+    <string name="duration_hint">Duration</string>
+    <string name="second_activity_image">Second Activity image</string>
+    <string name="set_date">Set Date</string>
+    <string name="set_time">Set Time</string>
+    <string name="enter">enter</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="balltop">ballTop</string>
+    <string name="start_timer">Start timer</string>
+    <string name="red_card">redCard</string>
+    <string name="yellow_card">yellowCard</string>
+    <string name="share">Share the result with your friends?</string>
+    <string name="venue">Venue: </string>
+    <string name="date">Date: </string>
+    <string name="time">Time: </string>
+    <string name="share_title">Share this text with:</string>
+    <string name="resume">Resume</string>
+    <string name="pm">PM</string>
+    <string name="am">AM</string>
+    <string name="colon">:</string>
+    <string name="dialog_title">Bonjour! Football enthusiast...</string>
+    <string name="dialog_msgone">Here are some few points that will help you navigate and keep track of the details of the exciting match ahead.</string>
+    <string name="dialog_msgtwo">1. If a team scores a goal, press the goalboard of each team respectively to increment the score of the team.</string>
+    <string name="dialog_msgthree">2. If a member of a team secured a card, press the icons on the left and right extremes to increment the number of cards secured.</string>
+    <string name="dialog_msgfour">3. Press the start timer button to start the match.</string>
+    <string name="dialog_msgfive">4. Lastly, don\'t forget to share the result of the match with your friends :)</string>
+    <string name="ok">Got it!</string>
+</resources>
